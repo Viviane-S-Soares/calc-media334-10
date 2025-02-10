@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Situação do Aluno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <button id="start">Começar</button>
+        <div class="question">
+            <label>Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome"/> 
+        </div>
+        <div class="question">
+            <label>Turma:</label>
+            <input type="number" id="turma" placeholder="Sua turma"/>
+        </div>
+        <div class="question">
+            <label>Matéria:</label>
+            <input type="text" name="materia" id="materia" placeholder="Ex: Matemática, Português, Física..."/>
+        </div>
+        <div class="question">
+            <label>Nota 1º trimestre:</label>
+            <input type="number" name="primeiraNota" id="primeiraNota" required placeholder="Nota do 1º trimestre"/>
+        </div>
+        <div class="question">
+            <label>Nota 2º trimestre:</label>
+            <input type="number" name="segundaNota" id="segundaNota" placeholder="Nota do 2º trimestre"/>
+        </div>
+        <div class="question">
+            <label>Nota 3º trimestre:</label>
+            <input type="number" name="terceiraNota" id="terceiraNota" placeholder="Nota do 3º trimestre"/>
+        </div>
+        <div class="btns">
+            <button id="back">Voltar</button>
+            <button id="next">Próximo</button> 
+        </div>
+        <button id="calc-result">Resultado</button>
+        <div class="resultados"></div>
+        <div class="opt-final">
+            <button class="btn-final" id="novo-aluno">Novo Aluno</button>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
